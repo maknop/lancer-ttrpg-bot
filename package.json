@@ -12,7 +12,10 @@
   "scripts": {
     "dev": "npx tsx index.ts",
     "load": "npx tsx deploy-commands.ts",
-    "delete": "npx tsx delete-commands.ts"
+    "delete": "npx tsx delete-commands.ts",
+    "tsc:full": "tsc --skipLibCheck true --incremental false",
+    "prettier:check": "prettier --check .",
+    "lint": "eslint '**/*.ts'"
   },
   "dependencies": {
     "@discordjs/builders": "^1.10.0",
@@ -21,12 +24,18 @@
     "@types/node": "*",
     "chalk": "^5.4.1",
     "discord.js": "^14.17.3",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "eslint": "^9.21.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.2",
     "ts-node": "^10.9.2",
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.25.0"
   }
 }
