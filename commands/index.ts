@@ -1,5 +1,9 @@
 import * as ping from "./utility/ping";
 
-export const commands = {
+interface CommandsProps {
+  ping: any;
+}
+
+export const commands: CommandsProps = {
   ping,
 };
